@@ -1,0 +1,92 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+
+.logo{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+
+.header__title {
+    font-family: "Permanent Marker", sans-serif;
+    margin-bottom: 15px;
+    font-size: 44px;
+}
+
+
+.nav__list{
+    display:flex;
+    gap: 15px;
+    font-size: 30px;
+
+}
+
+
+.nav__item{
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.nav__item:hover,
+.nav__item:focus {
+    color: rgb(21, 181, 255);
+}
+
+
+.table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.table__head__tr {
+    border: 2px solid #000000;
+
+}
+
+
+.table__head__th {
+    border: 2px solid #000000;
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+.table__tr {
+    border: 1px solid #000000;
+}
+
+
+.table__th {
+    border: 1px solid #000000;
+    padding: 15px;
+}
+
+
+.main__button{
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 700;
+    width: 216px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.main__button:hover,
+.main__button:focus{
+    background-color: rgb(25, 163, 255);
+}
