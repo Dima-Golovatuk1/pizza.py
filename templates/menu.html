@@ -40,48 +40,17 @@
                 <th class="table__head__th">Діаметр</th>
                 <th class="table__head__th">Вага</th>
             </tr>
+            {% for i in date %}
+            {% if i.number > 0 %}
             <tr class="table__tr">
-                <th class="table__th">Маргарита</th>
-                <th class="table__th">150 грн.</th>
-                <th class="table__th">томатний соус, моцарелла, базилік.</th>
-                <th class="table__th">30 см.</th>
-                <th class="table__th">550 грам.</th>
+                <th class="table__th">{{ i.name }}</th>
+                <th class="table__th">{{ i.price }}</th>
+                <th class="table__th">{{ i.composition }}</th>
+                <th class="table__th">{{ i.Diameter }}</th>
+                <th class="table__th">{{ i.Weight }}</th>
             </tr>
-            <tr class="table__tr">
-                <th class="table__th">Пепероні</th>
-                <th class="table__th">170 грн.</th>
-                <th class="table__th">томатний соус, моцарелла, пепероні.</th>
-                <th class="table__th">35 см.</th>
-                <th class="table__th">600 грам.</th>
-            </tr>
-            <tr class="table__tr">
-                <th class="table__th">Гавайська</th>
-                <th class="table__th">180 грн.</th>
-                <th class="table__th">томатний соус, моцарелла, шинка, ананаси.</th>
-                <th class="table__th">35 см.</th>
-                <th class="table__th">620 грам.</th>
-            </tr>
-            <tr class="table__tr">
-                <th class="table__th">Чотири сири</th>
-                <th class="table__th"> 190 грн.</th>
-                <th class="table__th">томатний соус, моцарелла, пармезан, горгонзола, дор-блю.</th>
-                <th class="table__th">35 см.</th>
-                <th class="table__th"> 650 грам.</th>
-            </tr>
-            <tr class="table__tr">
-                <th class="table__th">М'ясна</th>
-                <th class="table__th">200 грн.</th>
-                <th class="table__th"> томатний соус, моцарелла, салямі, бекон, шинка.</th>
-                <th class="table__th">40 см.</th>
-                <th class="table__th">700 грам.</th>
-            </tr>
-            <tr class="table__tr">
-                <th class="table__th">Вегетаріанська</th>
-                <th class="table__th"> 180 грн.</th>
-                <th class="table__th">томатний соус, моцарелла, перець, гриби, цибуля, оливки.</th>
-                <th class="table__th">35 см.</th>
-                <th class="table__th"> 620 грам.</th>
-            </tr>
+            {% endif %}
+            {% endfor %}
         </table>
         <a class="main__link" href="#">
             <button type="button" class="main__button">Замовити можна тут</button>
