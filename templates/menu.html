@@ -32,16 +32,14 @@
                 <th class="table__head__th">Діаметр</th>
                 <th class="table__head__th">Вага</th>
             </tr>
-            {% for i in date %}
-            {% if i.number > 0 %}
+            {% for i in data %}
             <tr class="table__tr">
-                <th class="table__th">{{ i.name }}</th>
-                <th class="table__th">{{ i.price }}</th>
-                <th class="table__th">{{ i.composition }}</th>
-                <th class="table__th">{{ i.Diameter }}</th>
-                <th class="table__th">{{ i.Weight }}</th>
+                <td class="table__th">{{  i[0]  }}</td>
+                <td class="table__th">{{  i[1]  }}</td>
+                <td class="table__th">{{  i[2]  }}</td>
+                <td class="table__th">{{  i[3]  }}</td>
+                <td class="table__th">{{  i[4]  }}</td>
             </tr>
-            {% endif %}
             {% endfor %}
         </table>
         <a class="main__link" href="#">
