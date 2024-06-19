@@ -15,7 +15,7 @@ def hellp_world():
 
 @app.route('/menu', methods=["GET", "POST"])
 def name():
-    with sqlite3.connect("menu.db") as db:
+    with sqlite3.connect("data.db") as db:
         cursor = db.cursor()
         cursor.execute("SELECT * FROM MENU")
         datamenu = cursor.fetchall()
